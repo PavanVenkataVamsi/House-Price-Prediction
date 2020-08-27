@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>House Price Prediction</title>
+    </head>
+    <style>
+        h1{
+    color: blue;
+    position: relative;
+    top: 20%;
+    font-size: xx-large;
+}
+table, th, td {
+    border: 5px ;
+    padding: 10px;
+  }
+table {
+    border-spacing: 15px;
+    width:70%;
+    height: 15%;
+}
+th,td {
+    text-align: center;
+    font-size:x-large;
+}
+body{
+    background-image: url("/static/house.jpg");
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body,html{
+    height: 90%;
+}
+    </style>
+    <body style="text-align: center;">
+        <div style="position: relative;top: 20%;">
+            <h1 style="color:greenyellow;">House Price Prediction</h1>
+            <form method="POST" action="." name="hai">
+                <div style="overflow-x:auto;">
+            <table style="width: 70%;position: relative;left: 10%;">
+                <tr>
+                    <td>
+                        <label for="fname" style="color:orange">Squartfeet basement:</label>
+                        <input type="text" id="fname" name="sb" value={{a}} size=5 style="background: none;color: red;">
+                    </td>
+                    <td>
+                        <label for="fname" style="color:orange">Squartfeet living:</label>
+                        <input type="text" id="fname" name="sl" value={{b}} size=5 style="background: none;color: red;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fname" style="color:orange">Squartfeet above:</label>
+                        <input type="text" id="fname" name="sa" value={{c}} size=5 style="background: none;color: red;">
+                    </td>
+                    <td>
+                        <label for="fname" style="color:orange">No of bedrooms:</label>
+                        <input type="text" id="fname" name="be" value={{d}} size=5 style="background: none;color: red;">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> 
+                        <label for="fname" style="color:orange">No of bathrooms:</label>
+                        <input type="text" id="fname" name="ba" value={{e}} size=5 style="background: none;color: red;">
+                    </td>
+                </tr>
+            </table></div>
+            <h2 style="color:orange">Estimated Price :Rs.<span style="color: orangered;">{{r}}</span></h4>
+            
+        </form>
+        </div>
+    </body>
+</html>
